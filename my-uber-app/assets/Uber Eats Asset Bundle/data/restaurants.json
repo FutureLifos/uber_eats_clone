@@ -145,5 +145,221 @@
         "price": 10.5
       }
     ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Hamburguesa Nostra La Salle",
+    "deliveryFee": 0.9,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 40,
+    "rating": 4.5,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/uber-eats/restaurant4.jpeg",
+    "dishes": [
+      {
+        "name": "English burger",
+        "description": "Beef with bacon, portobello mushrooms, tomato, cheddar cheese, grilled egg and our smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Mexican Burger",
+        "description": "Beef, with pico de gallo, veggie chili, cheddar cheese, guacamole and smoked sauce.",
+        "price": 14.9
+      },
+      {
+        "name": "Tequeños",
+        "description": "Crispy sticks filled with melted cheese accompanied by tomato chutney.",
+        "price": 9.9
+      },
+      {
+        "name": "Starters Combo",
+        "description": "Tequeños, crispy onion and chicken delicacies.",
+        "price": 13.9
+      },
+      {
+        "name": "Cesar Salad",
+        "description": "Green sprouts, pieces of grilled bacon, chicken delicacies, grated Parmesan, muffin croutons and fried onion confetti dressed with Caesar sauce.",
+        "price": 10.5
+      }
+    ]
   }
 ]
