@@ -39,7 +39,10 @@ const RestaurantDetailsPage = () => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         className="mt-5"
-        style={{ width: "92%", marginHorizontal: "5%" }}
+        style={{
+          width: "92%",
+          marginHorizontal: "5%",
+        }}
       >
         <Text
           style={{

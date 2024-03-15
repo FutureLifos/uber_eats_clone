@@ -5,15 +5,17 @@ import HomeScreen from "./src/screens/HomeScreen/Index";
 import DishDetailsSreen from "./src/screens/DishDetailsScreen/Index";
 import OrdersScreen from "./src/screens/OrdersScreen/Index";
 import Basket from "./src/screens/Basket/Index";
+import OrderDetails from "./src/screens/OrderDetails/Index";
 
 export default function App() {
   return (
-    <SafeAreaView className="justify-center mt-6 border border-red-600 items-center flex-1">
+    <SafeAreaView className="justify-center mt-3 items-center flex-1">
       {/* Restaurant Item */}
       {/* <RestaurantDetailsPage /> */}
       {/* <DishDetailsSreen /> */}
       {/* <Basket /> */}
-      <OrdersScreen />
+      {/* <OrdersScreen /> */}
+      {/* <OrderDetails /> */}
       {/* <HomeScreen /> */}
       <StatusBar style="auto" />
     </SafeAreaView>
