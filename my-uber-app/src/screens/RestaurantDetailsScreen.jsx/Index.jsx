@@ -10,11 +10,14 @@ import React from "react";
 import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
 import { FontAwesome5 } from "@expo/vector-icons";
 import DishListItem from "../../components/DishListItem/Index";
+import { useRoute } from "@react-navigation/native";
 
 const restaurant = restaurants[0];
 
 const RestaurantDetailsPage = () => {
-  console.log(restaurant.dishes);
+  const route = useRoute();
+  const id = route.params.id;
+  console.log(id);
   return (
     <View style={{ flex: 1, position: "relative", top: 10 }}>
       <View style={{ position: "relative" }}>
@@ -62,6 +65,7 @@ const RestaurantDetailsPage = () => {
             <DishListItem dish={restaurant.dishes[i]} />
           </View>
         ))}
+        <Text></Text>
       </ScrollView>
     </View>
   );

@@ -1,9 +1,15 @@
-import { Image, View, Text } from "react-native";
+import { Image, View, Text, Pressable } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const Index = ({ restaurant }) => {
+  const navigation = useNavigation();
+  const onPress = () => {
+    navigation.navigate("Restaurant", { id: restaurant.id });
+  };
+
   return (
-    <View className="mt-5">
+    <Pressable onPress={onPress} className="mt-5">
       <Image
         source={{
           uri: restaurant.image,
@@ -22,7 +28,7 @@ const Index = ({ restaurant }) => {
           {restaurant.rating}
         </Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
