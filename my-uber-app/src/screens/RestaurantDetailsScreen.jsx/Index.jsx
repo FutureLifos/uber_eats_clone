@@ -9,14 +9,15 @@ import {
 import React from "react";
 import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import DishListItem from "../../components/DishListItem/Index";
 import { useRoute } from "@react-navigation/native";
-
-const restaurant = restaurants[0];
 
 const RestaurantDetailsPage = () => {
   const route = useRoute();
   const id = route.params.id;
+  const restaurant = restaurants[id];
+  const navigate = useNavigation();
   console.log(id);
   return (
     <View style={{ flex: 1, position: "relative", top: 10 }}>
@@ -34,7 +35,7 @@ const RestaurantDetailsPage = () => {
             left: 3,
           }}
         >
-          <Text>
+          <Text onPress={() => navigate.goBack()}>
             <FontAwesome5 name="arrow-circle-left" size={48} color="black" />
           </Text>
         </View>
