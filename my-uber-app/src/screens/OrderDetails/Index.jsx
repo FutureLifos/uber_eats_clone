@@ -1,4 +1,4 @@
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, ScrollView } from "react-native";
 import orders from "../../../assets/Uber Eats Asset Bundle/data/orders.json";
 import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
 import React from "react";
@@ -35,14 +35,13 @@ const OrderDetails = () => {
         <Text>{order.status}</Text>
         <Text>Your Orders</Text>
       </View>
-
-      <View>
+      <ScrollView>
         {Array.from({ length: restaurant.length }, (_, i) => (
           <View key={i}>
             <BasketDishItem basketDish={restaurant[i]} id={i} />
           </View>
         ))}
-      </View>
+      </ScrollView>
     </View>
   );
 };

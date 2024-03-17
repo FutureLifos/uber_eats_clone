@@ -1,9 +1,14 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 
 const Index = ({ dish }) => {
+  const navigation = useNavigation();
   return (
-    <View className="mt-3 flex flex-row">
+    <Pressable
+      onPress={() => navigation.navigate("Dish", { id: dish.id })}
+      className="mt-3 flex flex-row"
+    >
       <View className="flex-1">
         <Text className="text-2xl font-bold">{dish.name}</Text>
         <Text>{dish.description}</Text>
@@ -17,7 +22,7 @@ const Index = ({ dish }) => {
           />
         </View>
       )}
-    </View>
+    </Pressable>
   );
 };
 

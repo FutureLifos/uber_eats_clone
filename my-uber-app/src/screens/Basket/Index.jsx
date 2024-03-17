@@ -1,5 +1,4 @@
 import { View, Text, ScrollView } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
 import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
 import BasketDishItems from "../../components/BasketDishItem/Index";
 import React, { useState } from "react";
