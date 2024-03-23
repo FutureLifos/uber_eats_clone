@@ -10,6 +10,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import DishDetailsSreen from "../screens/DishDetailsScreen/Index";
 import Basket from "../screens/Basket/Index";
 import OrdersScreen from "../screens/OrdersScreen/Index";
+import ProfileScreen from "../screens/ProfileScreen/Index";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,7 +28,6 @@ function HomeTabs() {
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: { position: "absolute" },
-        headerShown: false,
         tabBarBackground: () => (
           <BlurView
             tint="light"
@@ -41,6 +41,7 @@ function HomeTabs() {
         name="Home"
         component={HomeStackNavigator}
         options={{
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Entypo name="home" size={24} color="black" />
           ),
@@ -48,7 +49,7 @@ function HomeTabs() {
       />
       <Tab.Screen
         name="Orders"
-        component={OrdersStackNavigator}
+        component={OrdersScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome name="list" size={24} color="black" />
@@ -57,7 +58,7 @@ function HomeTabs() {
       />
       <Tab.Screen
         name="Profile"
-        component={OrdersScreen}
+        component={ProfileScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <Ionicons name="person-circle" size={24} color="black" />

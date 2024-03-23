@@ -5,7 +5,7 @@ import OrderListItem from "../../components/OrderListItem/Index";
 
 const Index = () => {
   return (
-    <ScrollView className="w-full flex-1 gap-3 mt-2">
+    <ScrollView className="w-full flex-1 gap-3 mt-16">
       {Array.from({ length: orders.length }, (_, i) => (
         <View key={i}>
           <Text>

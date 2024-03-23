@@ -4,10 +4,10 @@ Amplify.configure(amplifyconfig);
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import RootNavigator from "./src/navigation/Index";
-import {
-  withAuthenticator,
-  // useAuthenticator,
-} from "@aws-amplify/ui-react-native";
+// import {
+//   withAuthenticator,
+//   // useAuthenticator,
+// } from "@aws-amplify/ui-react-native";
 
 function App() {
   return (
@@ -18,9 +18,8 @@ function App() {
   );
 }
 
-// export default App;
-export default withAuthenticator(App, {
-});
+export default App;
+// export default withAuthenticator(App);
 
 // import React, { useEffect, useState } from "react";
 // import {
