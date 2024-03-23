@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nativelifos-staging-151918-authRole",
+      "UnauthRoleArn": "arn:aws:iam::992382393324:role/amplify-nativelifos-staging-151918-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::992382393324:role/amplify-nativelifos-staging-151918-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-nativelifos-staging-151918-deployment",
+      "UnauthRoleName": "amplify-nativelifos-staging-151918-unauthRole",
+      "StackName": "amplify-nativelifos-staging-151918",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:992382393324:stack/amplify-nativelifos-staging-151918/6799ab40-d971-11ee-89c4-0aed6351148d",
+      "AmplifyAppId": "dvafjlg5v6k0q"
+    },
+    "categories": {
+      "auth": {
+        "NativeLifos": {}
+      },
+      "api": {
+        "nativelifos": {}
+      }
+    }
+  }
+}
