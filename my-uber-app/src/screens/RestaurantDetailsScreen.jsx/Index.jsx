@@ -4,20 +4,43 @@ import {
   ScrollView,
   FlatList,
   Image,
-  // SectionList,
+  ActivityIndicator,
 } from "react-native";
-import React from "react";
-import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
+import React, { useEffect, useState } from "react";
+import { DataStore } from "@aws-amplify/datastore";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import DishListItem from "../../components/DishListItem/Index";
+import { Restaurant, Dish } from "../../models";
+import { Predicates } from "@aws-amplify/datastore";
 import { useRoute } from "@react-navigation/native";
 
 const RestaurantDetailsPage = () => {
+  const [restaurant, setRestaurant] = useState(null);
+  const [dishes, setDishes] = useState([]);
   const route = useRoute();
   const id = route.params.id;
-  const restaurant = restaurants[id];
   const navigate = useNavigation();
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await DataStore.query(Restaurant, id);
+        setRestaurant(res);
+        const res1 = await DataStore.query(Dish, Predicates.ALL);
+        setDishes(res1.filter((dish) => dish.restaurantID === id));
+        console.log("-----------------------------------------");
+        dishes.map((eachdish, index) => (
+          <div key={index}>{console.log(eachdish)} </div>
+        ));
+      } catch (error) {
+        console.error(error.stack);
+      }
+    })();
+  }, []);
+  if (!restaurant) {
+    return <ActivityIndicator size="large" />;
+  }
+  console.log(restaurant);
   console.log(id);
   return (
     <View style={{ flex: 1, position: "relative", top: 10 }}>
@@ -59,14 +82,15 @@ const RestaurantDetailsPage = () => {
           {restaurant.name}
         </Text>
         <Text style={{ color: "gray", marginBottom: 8 }}>
-          {`${restaurant.deliveryFee} . ${restaurant.minDeliveryTime}-${restaurant.maxDeliveryTime} minutes`}
+          {`$${restaurant.deliveryFee.toFixed(2)} - ${
+            restaurant.minDeliveryTime
+          }-${restaurant.maxDeliveryTime} minutes`}
         </Text>
-        {Array.from({ length: restaurant.dishes.length }, (_, i) => (
+        {Array.from({ length: dishes.length }, (_, i) => (
           <View key={i}>
-            <DishListItem dish={restaurant.dishes[i]} />
+            <DishListItem dish={dishes[i]} />
           </View>
         ))}
-        <Text></Text>
       </ScrollView>
     </View>
   );

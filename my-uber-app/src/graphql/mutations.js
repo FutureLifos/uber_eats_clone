@@ -1,47 +1,155 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createRestaurant = /* GraphQL */ `
+  mutation CreateRestaurant(
+    $input: CreateRestaurantInput!
+    $condition: ModelRestaurantConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createRestaurant(input: $input, condition: $condition) {
       id
       name
-      description
+      image
+      deliveryFee
+      minDeliveryTime
+      maxDeliveryTime
+      rating
+      address
+      lat
+      lng
+      Dishes {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateRestaurant = /* GraphQL */ `
+  mutation UpdateRestaurant(
+    $input: UpdateRestaurantInput!
+    $condition: ModelRestaurantConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateRestaurant(input: $input, condition: $condition) {
       id
       name
-      description
+      image
+      deliveryFee
+      minDeliveryTime
+      maxDeliveryTime
+      rating
+      address
+      lat
+      lng
+      Dishes {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteRestaurant = /* GraphQL */ `
+  mutation DeleteRestaurant(
+    $input: DeleteRestaurantInput!
+    $condition: ModelRestaurantConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteRestaurant(input: $input, condition: $condition) {
       id
       name
-      description
+      image
+      deliveryFee
+      minDeliveryTime
+      maxDeliveryTime
+      rating
+      address
+      lat
+      lng
+      Dishes {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const createDish = /* GraphQL */ `
+  mutation CreateDish(
+    $input: CreateDishInput!
+    $condition: ModelDishConditionInput
+  ) {
+    createDish(input: $input, condition: $condition) {
+      id
+      name
+      image
+      description
+      price
+      restaurantID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const updateDish = /* GraphQL */ `
+  mutation UpdateDish(
+    $input: UpdateDishInput!
+    $condition: ModelDishConditionInput
+  ) {
+    updateDish(input: $input, condition: $condition) {
+      id
+      name
+      image
+      description
+      price
+      restaurantID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const deleteDish = /* GraphQL */ `
+  mutation DeleteDish(
+    $input: DeleteDishInput!
+    $condition: ModelDishConditionInput
+  ) {
+    deleteDish(input: $input, condition: $condition) {
+      id
+      name
+      image
+      description
+      price
+      restaurantID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       __typename
     }
   }
