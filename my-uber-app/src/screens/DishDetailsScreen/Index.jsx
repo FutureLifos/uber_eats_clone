@@ -1,13 +1,33 @@
-import { View, Text, Pressable } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { View, Text, Pressable, ActivityIndicator } from "react-native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
 import restaurants from "../../../assets/Uber Eats Asset Bundle/data/restaurants.json";
-import React, { useState } from "react";
+import { Dish } from "../../models";
+import React, { useEffect, useState } from "react";
+import { DataStore } from "@aws-amplify/datastore";
 const dish = restaurants[0].dishes[0];
 
 const DishDetailsSreen = () => {
   const [quantity, setQuantity] = useState(1);
+  const route = useRoute();
+  const id = route.params.id;
+  const [dish, setDish] = useState(null);
   const navigation = useNavigation();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await DataStore.query(Dish, id);
+        setDish(res);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, [id]);
+
+  if (dish == null) {
+    return <ActivityIndicator size="large" />;
+  }
 
   return (
     <View className="flex-1 relative flex-col p-4 w-full">
